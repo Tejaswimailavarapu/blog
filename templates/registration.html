@@ -1,0 +1,75 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('https://c0.wallpaperflare.com/path/789/637/166/backlit-chiemsee-dawn-desktop-backgrounds-3f5781e72021e8481cbb6c645f23a20d.jpg'); /* Specify the path to your dark background image */
+            background-size: cover; /* Cover the entire background */
+            background-position: center; /* Center the background image */
+            padding: 20px;
+            margin: 0; /* Remove default margin */
+            color: #ffffff; /* Set text color to white for better visibility on dark background */
+        }
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background for better readability */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* Add a light shadow to separate the form from the background */
+        }
+        h3 {
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ffffff; /* Set border color to white */
+            border-radius: 5px;
+            box-sizing: border-box;
+            background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white background for input fields */
+            color: #ffffff; /* Set text color to white */
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h3>Registration</h3>
+    <form method="POST">
+        <label for="username">User Name:</label>
+        <input type="text" name="username" id="username" placeholder="Enter your name" required><br><br>
+        <label for="mobile">Mobile:</label>
+        <input type="text" name="mobile" id="mobile" placeholder="Mobile number" required><br><br>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" placeholder="Email" required><br><br>
+        <label for="address">Address:</label>
+        <input type="text" name="address" id="address" placeholder="Enter your address" required><br><br>
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" placeholder="*******" required><br><br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
